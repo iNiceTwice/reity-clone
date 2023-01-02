@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Benefits from '../views/main/Benefits'
 import Hero from '../views/main/Hero'
 //yepegow204@cmeinbox.com
 
@@ -12,6 +13,7 @@ export default function Home() {
       </Head>
       <main>
         <Hero/>
+        <Benefits/>
       </main>
     </div>
   )
