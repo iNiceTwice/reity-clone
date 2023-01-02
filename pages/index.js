@@ -2,6 +2,7 @@ import Head from 'next/head'
 import AvaibleInvestments from '../views/main/AvaibleInvestments'
 import Benefits from '../views/main/Benefits'
 import Hero from '../views/main/Hero'
+import WhyUs from '../views/main/WhyUs'
 //yepegow204@cmeinbox.com
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
         <Hero/>
         <Benefits/>
         <AvaibleInvestments/>
+        <WhyUs/>
       </main>
     </div>
   )
