@@ -1,14 +1,12 @@
 import Image from "next/image"
 import Button from "../../components/Button";
+import SectionTitle from "../../components/SectionTitle";
 
 const AvaibleInvestments = () => {
     return ( 
         <>
             <section className="w-full py-32">
-                <div className="flex flex-col w-full items-center gap-2 text-slate-800 mb-20 lg:mb-32">
-                    <h2 className="font-semibold text-2xl lg:text-5xl font-montserrat">Inversiones disponibles</h2>
-                    <div className="h-[6px] w-24 bg-main"></div>
-                </div>
+                <SectionTitle title="Inversiones disponibles"/>
                 <div className="flex flex-col lg:flex-row w-full lg:px-[8vw] lg:gap-5 justify-center items-center">
                     <div className="w-10/12 lg:w-8/12">
                         <div className="relative h-[15rem] lg:h-[40rem] w-full lg:shadow-lg overflow-hidden rounded-t-md lg:rounded-md">

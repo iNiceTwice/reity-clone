@@ -1,13 +1,11 @@
 import Image from "next/image"
+import SectionTitle from "../../components/SectionTitle"
 
 const WhyUs = () => {
     return ( 
         <>
             <section className="py-32 w-full">
-                <div className="flex flex-col w-full items-center gap-2 text-slate-800 mb-20 lg:mb-32">
-                    <h2 className="font-semibold text-2xl lg:text-5xl font-montserrat">¿Por qué Reity?</h2>
-                    <div className="h-[6px] w-24 bg-main"></div>
-                </div>
+                <SectionTitle title="¿Por qué Reity?"/>
                 <div className="mt-10 w-full flex flex-col gap-y-10 justify-center items-center">
                     <div className="w-11/12 h-fit flex flex-col justify-center items-center lg:items-stretch lg:flex-row gap-6">
                         <div className="w-full md:w-5/6 lg:w-1/3 font-montserrat rounded-md shadow-xl flex flex-col gap-4 text-slate-800 items-center p-16 text-center min-h-full">
