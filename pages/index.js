@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import AvaibleInvestments from '../views/main/AvaibleInvestments'
 import Benefits from '../views/main/Benefits'
 import Hero from '../views/main/Hero'
 //yepegow204@cmeinbox.com
@@ -14,6 +15,7 @@ export default function Home() {
       <main>
         <Hero/>
         <Benefits/>
+        <AvaibleInvestments/>
       </main>
     </div>
   )
