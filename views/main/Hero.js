@@ -13,7 +13,7 @@ const Hero = () => {
                     <p className="text-center text-lg mt-8 w-10/12 lg:w-[35rem]">Con Reity invierte en tokens asociados a departamentos con solo $100.000 y gana por el arriendo y la plusvalía. Sin pie, sin créditos y con garantía.</p>
                     <Button className="bg-secondary mt-8 px-12" text="Empezar"/>
                 </div>
-                <div className="z-10 absolute -right-96 -mr-36 h-[50rem] w-[50rem] hidden lg:flex    ">
+                <div className="z-10 absolute -right-96 -mr-36 h-[50rem] w-[50rem] hidden lg:flex">
                     <Image fill src="https://www.reity.cl/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FCityImage.05e7ea7c.png&w=1080&q=75" objectFit="cover"/>
                 </div>
             </section>
