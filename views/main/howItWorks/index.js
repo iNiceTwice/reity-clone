@@ -5,6 +5,7 @@ import { HiCurrencyDollar, HiOutlineHomeModern } from "react-icons/hi2";
 import { TabOne, TabOneInfo } from "./TabOne";
 import { TabTwo, TabTwoInfo } from "./TabTwo";
 import { TabThree,TabThreeInfo } from "./TabThree";
+import { TabFour, TabFourInfo } from "./TabFour";
 
 const HowItWorks = () => {
 
@@ -55,6 +56,7 @@ const HowItWorks = () => {
                     { selectedTab === 1 ? <TabOne />  : null}
                     { selectedTab === 2 ? <TabTwo />  : null}
                     { selectedTab === 3 ? <TabThree />  : null}
+                    { selectedTab === 4 ? <TabFour />  : null}
                 </div>
             </section>
         </>
