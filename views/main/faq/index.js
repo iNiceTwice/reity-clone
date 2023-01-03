@@ -2,6 +2,7 @@ import { useState } from "react"
 import SectionTitle from "../../../components/SectionTitle"
 import Image from "next/image"
 import TabBusiness from "./TabBusiness"
+import TabLegal from "./TabLegal";
 
 const FAQ = () => {
 
@@ -49,7 +50,7 @@ const FAQ = () => {
                                 </div>
                             </div>
                             { selectedTab === "business" ? <TabBusiness/>  : null}
-                            { selectedTab === "legal" ? <></>  : null}
+                            { selectedTab === "legal" ? <TabLegal/>  : null}
                             { selectedTab === "tecnology" ? <></>  : null}
                         </div>
                     </div>    
