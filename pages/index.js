@@ -4,6 +4,7 @@ import Benefits from '../views/main/Benefits'
 import Hero from '../views/main/Hero'
 import HowItWorks from '../views/main/howItWorks'
 import ReachGoals from '../views/main/ReachGoals'
+import { Team } from '../views/main/Team'
 import WhyUs from '../views/main/WhyUs'
 //yepegow204@cmeinbox.com
 
@@ -22,6 +23,7 @@ export default function Home() {
         <WhyUs/>
         <HowItWorks/>
         <ReachGoals/>
+        <Team/>
       </main>
     </div>
   )
