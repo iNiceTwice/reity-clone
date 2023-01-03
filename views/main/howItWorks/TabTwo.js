@@ -11,7 +11,7 @@ export const TabTwoInfo = () => {
                     </div>
                     <div className="flex flex-col gap-8 w-4/6">
                         <h3 className="text-slate-800 text-2xl">Elige las propiedades</h3>
-                        <p className="font-thin">nvierte informado. Conoce toda la información de las propiedades, desde la ubicación hasta proyecciones y elige en las que quieras invertir.</p>
+                        <p className="font-thin">Invierte informado. Conoce toda la información de las propiedades, desde la ubicación hasta proyecciones y elige en las que quieras invertir.</p>
                     </div>
                 </div>
                 <div className="w-full h-fit flex gap-8 p-6">

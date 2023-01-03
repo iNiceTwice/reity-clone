@@ -4,6 +4,7 @@ import Image from "next/image"
 import { HiCurrencyDollar, HiOutlineHomeModern } from "react-icons/hi2";
 import { TabOne, TabOneInfo } from "./TabOne";
 import { TabTwo, TabTwoInfo } from "./TabTwo";
+import { TabThree,TabThreeInfo } from "./TabThree";
 
 const HowItWorks = () => {
 
@@ -53,6 +54,7 @@ const HowItWorks = () => {
                 <div className="mt-16">
                     { selectedTab === 1 ? <TabOne />  : null}
                     { selectedTab === 2 ? <TabTwo />  : null}
+                    { selectedTab === 3 ? <TabThree />  : null}
                 </div>
             </section>
         </>
