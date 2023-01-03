@@ -9,7 +9,7 @@ export const TabOneInfo = () => {
                     <div className="h-full my-auto flex items-center">
                         <HiOutlineUserPlus className="text-secondary" size={50}/>
                     </div>
-                    <div className="flex flex-col gap-8 w-4/6">
+                    <div className="flex flex-col gap-8 w-full lg:w-4/6">
                         <h3 className="text-slate-800 text-2xl">Crea tu cuenta</h3>
                         <p className="font-thin">Crea tu cuenta en menos de dos minutos y ten acceso a un marketplace para invertir en tokens de propiedades.</p>
                     </div>
@@ -18,7 +18,7 @@ export const TabOneInfo = () => {
                     <div className="h-full my-auto flex items-center">
                         <HiOutlineShieldCheck className="text-secondary" size={50}/>
                     </div>
-                    <div className="flex flex-col gap-8 w-4/6">
+                    <div className="flex flex-col gap-8 w-full lg:w-4/6">
                         <h3 className="text-slate-800 text-2xl">Verifica tu cuenta</h3>
                         <p className="font-thin">Para evitar fraude e intentos de lavado de dinero, verificamos tu cuenta y tus datos a través de un proceso automático.</p>
                     </div>
