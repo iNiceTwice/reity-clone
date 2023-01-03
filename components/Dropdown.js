@@ -13,7 +13,7 @@ const Dropdown = ({ children, title }) => {
         <>
             <button onClick={()=>handleClickDropdown()} className="w-full text-left p-5 shadow-md transition-colors rounded-lg">
             <div className=" flex justify-between items-center">
-                <h5 className="font-montserrat font-semibold text-lg text-slate-800 transition-colors">{ title }</h5>
+                <h5 className="font-montserrat font-semibold text-slate-800 transition-colors">{ title }</h5>
                 <div className="flex items-center">
                     {
                         open
