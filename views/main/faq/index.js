@@ -3,6 +3,7 @@ import SectionTitle from "../../../components/SectionTitle"
 import Image from "next/image"
 import TabBusiness from "./TabBusiness"
 import TabLegal from "./TabLegal";
+import TabTecnology from "./TabTecnology";
 
 const FAQ = () => {
 
@@ -51,7 +52,7 @@ const FAQ = () => {
                             </div>
                             { selectedTab === "business" ? <TabBusiness/>  : null}
                             { selectedTab === "legal" ? <TabLegal/>  : null}
-                            { selectedTab === "tecnology" ? <></>  : null}
+                            { selectedTab === "tecnology" ? <TabTecnology/>  : null}
                         </div>
                     </div>    
                 </div>
