@@ -15,7 +15,7 @@ const FAQ = () => {
 
     return ( 
          <>
-            <section className="py-20 flex flex-col justify-center items-center w-full">
+            <section id="faq" className="py-20 flex flex-col justify-center items-center w-full">
                 <SectionTitle title="FAQ"/>
                 <div className="w-4/6">
                     <div className="flex w-full justify-center -mt-10">
