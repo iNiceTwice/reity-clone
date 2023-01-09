@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Layout from '../layout'
 import AvaibleInvestments from '../views/main/AvaibleInvestments'
 import Benefits from '../views/main/Benefits'
 import FAQ from '../views/main/faq'
@@ -18,14 +19,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Hero/>
-        <Benefits/>
-        <AvaibleInvestments/>
-        <WhyUs/>
-        <HowItWorks/>
-        <ReachGoals/>
-        <Team/>
-        <FAQ/>
+        <Layout>
+          <Hero/>
+          <Benefits/>
+          <AvaibleInvestments/>
+          <WhyUs/>
+          <HowItWorks/>
+          <ReachGoals/>
+          <Team/>
+          <FAQ/>
+        </Layout>
       </main>
     </div>
   )

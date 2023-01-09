@@ -75,15 +75,15 @@ const Nav = () => {
                     >
                         Propiedades
                     </a>
-                    <a
-                        href="#testimonials" 
+                    <Link
+                        href="/login"
                         onClick={ () => setMenu(menu => !menu)} 
                         className="cursor-pointer"
                     >
                         Ingresa
-                    </a>
+                    </Link>
                     <Link href="/signup">
-                        <Button text="Crea tu cuenta"/>
+                        <Button>Crea tu cuenta</Button>
                     </Link>
                     </div>
                 </motion.div>
@@ -102,15 +102,15 @@ const Nav = () => {
                     >
                         Propiedades
                     </a>
-                    <a
-                        href="#testimonials" 
+                    <Link
+                        href="/login"
                         onClick={ () => setMenu(menu => !menu)} 
                         className="cursor-pointer"
                     >
                         Ingresa
-                    </a>
+                    </Link>
                     <Link href="/signup">
-                        <Button text="Crea tu cuenta"/>
+                        <Button>Crea tu cuenta</Button>
                     </Link>
                 </div>
             </div>

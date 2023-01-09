@@ -1,5 +1,6 @@
 import Logo from "../components/Logo";
 import Button from "../components/Button"
+import Link from "next/link";
 
 const signup = () => {
     return ( 
@@ -8,7 +9,9 @@ const signup = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 h-full w-full">
                     <div className="w-full h-full flex justify-center items-center">
                         <div className="flex flex-col lg:w-1/2 items-center justify-center">
-                            <Logo className="h-[3.5rem] mb-8"/>
+                            <Link href="/">
+                                <Logo className="h-[3.5rem] mb-8"/>
+                            </Link>
                             <div className="text-center">
                                 <h2 className="font-semibold text-3xl mb-2">Bienvenido</h2>
                                 <p className="text-sm text-slate-800/80">Compra tokens de propiedades y gana por el arriendo y plusvalía</p>
@@ -25,7 +28,7 @@ const signup = () => {
                                 <Button className="py-2">Empezar</Button>
                                 <div className="border-b w-full my-6"></div>
                                 <a href="#" className="text-main font-medium text-sm">Recuperar contraseña</a>    
-                                <a href="#" className="text-main font-medium text-sm">Registrarme</a>    
+                                <Link href="/signup" className="text-main font-medium text-sm">Registrarme</Link>    
                             </form>
                         </div>
                     </div>

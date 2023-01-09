@@ -1,4 +1,5 @@
 import { TeamMember } from "../views/main/Team";
+import Layout from '../layout'
 
 const People = () => {
 
@@ -6,6 +7,7 @@ const People = () => {
     
     return ( 
         <>
+        <Layout>
             <section className="w-full pt-48 pb-32 flex justify-center items-center">
                 <div className="w-full lg:w-4/6 px-8">
                     <div className="w-full text-center">
@@ -21,6 +23,7 @@ const People = () => {
                     </div>
                 </div>
             </section>
+        </Layout>
         </>
      );
 }
