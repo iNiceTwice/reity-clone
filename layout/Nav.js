@@ -82,7 +82,9 @@ const Nav = () => {
                     >
                         Ingresa
                     </a>
-                    <Button text="Crea tu cuenta"/>
+                    <Link href="/signup">
+                        <Button text="Crea tu cuenta"/>
+                    </Link>
                     </div>
                 </motion.div>
                 <div className="md:flex hidden font-sans gap-x-8 items-center text-sm font-semibold text-main">
@@ -107,7 +109,9 @@ const Nav = () => {
                     >
                         Ingresa
                     </a>
-                    <Button text="Crea tu cuenta"/>
+                    <Link href="/signup">
+                        <Button text="Crea tu cuenta"/>
+                    </Link>
                 </div>
             </div>
         </>
