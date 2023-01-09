@@ -20,7 +20,7 @@ const signup = () => {
                                     <input type="checkbox" className="focus:ring-main rounded-md border h-4 w-4 text-primary-600 border-gray-300"/>
                                     <p className="text-sm text-slate-800/80"> He leído y acepto los <a href="#" className="underline">términos y condiciones</a> </p>
                                 </div>
-                                <Button className="py-2" text="Empezar"/>
+                                <Button className="py-2">Empezar</Button>
                                 <div className="border-b w-full my-6"></div>
                                 <a href="#" className="text-main font-medium text-sm">¿Ya tienes cuenta? Entra aquí</a>    
                                 <a href="#" className="text-main font-medium text-sm">Recuperar contraseña</a>    

@@ -10,20 +10,22 @@ const signup = () => {
                         <div className="flex flex-col lg:w-1/2 items-center justify-center">
                             <Logo className="h-[3.5rem] mb-8"/>
                             <div className="text-center">
-                                <h2 className="font-semibold text-3xl mb-2">Crea tu cuenta</h2>
-                                <p className="text-sm text-slate-800/80">Invierte en tokens de propiedades de todo el mundo</p>
+                                <h2 className="font-semibold text-3xl mb-2">Bienvenido</h2>
+                                <p className="text-sm text-slate-800/80">Compra tokens de propiedades y gana por el arriendo y plusvalía</p>
                             </div>
                             <form className=" mt-16 w-full flex flex-col">
                                 <label className="mb-1 font-semibold text-slate-800/90 text-sm" for="email">Correo</label>
                                 <input name="email" type="email" className="py-1 px-2 w-full outline-none rounded-md border"/>
+                                <label className="mb-1 font-semibold text-slate-800/90 text-sm my-4" for="email">Contraseña</label>
+                                <input name="password" type="password" className="py-1 px-2 w-full outline-none rounded-md border"/>
                                 <div className="flex gap-2 items-center my-6">
                                     <input type="checkbox" className="focus:ring-main rounded-md border h-4 w-4 text-primary-600 border-gray-300"/>
                                     <p className="text-sm text-slate-800/80"> He leído y acepto los <a href="#" className="underline">términos y condiciones</a> </p>
                                 </div>
-                                <Button className="py-2" text="Empezar"/>
+                                <Button className="py-2">Empezar</Button>
                                 <div className="border-b w-full my-6"></div>
-                                <a href="#" className="text-main font-medium text-sm">¿Ya tienes cuenta? Entra aquí</a>    
                                 <a href="#" className="text-main font-medium text-sm">Recuperar contraseña</a>    
+                                <a href="#" className="text-main font-medium text-sm">Registrarme</a>    
                             </form>
                         </div>
                     </div>

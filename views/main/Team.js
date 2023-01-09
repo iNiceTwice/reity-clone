@@ -31,7 +31,7 @@ export const Team = () => {
                 </div>
                 <div className="w-full text-center mt-20">
                     <Link href="/personas">
-                        <Button text="Conoce a todo el equipo"/>
+                        <Button>Conoce a todo el equipo</Button>
                     </Link>
                 </div>
             </section>

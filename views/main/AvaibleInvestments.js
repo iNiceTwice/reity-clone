@@ -36,7 +36,7 @@ const AvaibleInvestments = () => {
                                 <Image alt="Rentabilidad" src="https://www.reity.cl/arrowIcon.svg" height={45} width={45}/>
                                 <div>Rentabilidad: 12.73%</div>
                             </div>
-                            <Button className="bg-secondary mt-2" text="Comprar"/>
+                            <Button className="bg-secondary mt-2">Comprar</Button>
                         </div>
                     </div>
                 </div>                                                                                       
