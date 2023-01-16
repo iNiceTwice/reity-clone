@@ -1,0 +1,155 @@
+[33mcommit dc698982b4a6aaea7a921165a40b4ecb3734544c[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: NiceTwice <onlynicetwice@gmail.com>
+Date:   Mon Jan 16 15:39:59 2023 -0300
+
+    appDir rounting added
+
+[33mcommit 0373e4188536a0a36a118d53ae610f5cf4d2256d[m
+Author: NiceTwice <onlynicetwice@gmail.com>
+Date:   Mon Jan 9 17:32:37 2023 -0300
+
+    adding url to links
+
+[33mcommit 874723f8f515d84921934580874f7619c4a18241[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: NiceTwice <onlynicetwice@gmail.com>
+Date:   Mon Jan 9 16:12:28 2023 -0300
+
+    signin ui added
+
+[33mcommit 3a343f05d6f131ee6e84a1a6e9352fc3f8c45ffb[m
+Author: NiceTwice <onlynicetwice@gmail.com>
+Date:   Mon Jan 9 04:20:18 2023 -0300
+
+    signup ui added
+
+[33mcommit 58c09178c60b9e490776f57f2db29f3d04b23b94[m
+Author: NiceTwice <onlynicetwice@gmail.com>
+Date:   Tue Jan 3 21:01:56 2023 -0300
+
+    footer added
+
+[33mcommit b154fcd5559bcff49126e1f1f714aeb158d945cd[m
+Author: NiceTwice <onlynicetwice@gmail.com>
+Date:   Tue Jan 3 20:27:17 2023 -0300
+
+    faq view added
+
+[33mcommit c3eb240ee43ea7e3e29f322833f002c184092a7b[m
+Author: NiceTwice <onlynicetwice@gmail.com>
+Date:   Tue Jan 3 20:25:41 2023 -0300
+
+    tab tecnology faq view added
+
+[33mcommit 31b01f94834c199fc9df2e8bdba0ca864986cebb[m
+Author: NiceTwice <onlynicetwice@gmail.com>
+Date:   Tue Jan 3 20:21:39 2023 -0300
+
+    tab legal faq view added
+
+[33mcommit 367fddd186e3923c6d8e66b0c96021716af0ce94[m
+Author: NiceTwice <onlynicetwice@gmail.com>
+Date:   Tue Jan 3 20:13:20 2023 -0300
+
+    tab business faq view added
+
+[33mcommit baf15af2aabe8b933987fc5e78ff68a9ffd3a3f4[m
+Author: NiceTwice <onlynicetwice@gmail.com>
+Date:   Tue Jan 3 19:10:32 2023 -0300
+
+    personas page added
+
+[33mcommit 2c4dba955e264cc5981e60fa271014de2c21bc10[m
+Author: NiceTwice <onlynicetwice@gmail.com>
+Date:   Tue Jan 3 18:43:59 2023 -0300
+
+    team & teamMember added to views
+
+[33mcommit 9c3b8fa05cad3f1647d63630c4d852ab98e74eaf[m
+Author: NiceTwice <onlynicetwice@gmail.com>
+Date:   Tue Jan 3 17:46:29 2023 -0300
+
+    reach goals view added
+
+[33mcommit 660b0c0dbb61cae755ebfca30a5a4ca78e6e5a53[m
+Author: NiceTwice <onlynicetwice@gmail.com>
+Date:   Tue Jan 3 05:27:04 2023 -0300
+
+    HowItWorks view added with dropdowns & responsive components
+
+[33mcommit 85de235ba4d956390355cdf37bda060b9d69c13f[m
+Author: NiceTwice <onlynicetwice@gmail.com>
+Date:   Tue Jan 3 04:51:59 2023 -0300
+
+    tab four of HowItWorks view done
+
+[33mcommit d6f8ed046331d262997f2c108dc2e1a26c7e4875[m
+Author: NiceTwice <onlynicetwice@gmail.com>
+Date:   Tue Jan 3 04:16:01 2023 -0300
+
+    tab three of HowItWorks view done
+
+[33mcommit fbb6ef7ed226c3966085dd82d03e9fb29dd88208[m
+Author: NiceTwice <onlynicetwice@gmail.com>
+Date:   Tue Jan 3 04:00:48 2023 -0300
+
+    tab two of HowItWorks view done
+
+[33mcommit 5a9a2a9483a93a11da32155debe5f0b550cf66d9[m
+Author: NiceTwice <onlynicetwice@gmail.com>
+Date:   Mon Jan 2 22:10:50 2023 -0300
+
+    tab one of HowItWorks view done
+
+[33mcommit 420efd91cb5d93e99f6b78006f7be918b1932548[m
+Author: NiceTwice <onlynicetwice@gmail.com>
+Date:   Mon Jan 2 20:09:21 2023 -0300
+
+    SectionTitle component added
+
+[33mcommit ae48be2a36a4ef4c1420ee07a1ae7d5b37a72e2b[m
+Author: NiceTwice <onlynicetwice@gmail.com>
+Date:   Mon Jan 2 19:12:45 2023 -0300
+
+    why us section images responsive fixes
+
+[33mcommit a51c657a6a9b11515649678bc94f10b508e944e4[m
+Author: NiceTwice <onlynicetwice@gmail.com>
+Date:   Mon Jan 2 19:08:51 2023 -0300
+
+    why us section to main added
+
+[33mcommit e7a572a94f11153f58cbee7628b8036b14b974f6[m
+Author: NiceTwice <onlynicetwice@gmail.com>
+Date:   Mon Jan 2 18:06:11 2023 -0300
+
+    avaible investments view added
+
+[33mcommit 19bb3ba7f075476a863a479136edca893bf176fa[m
+Author: NiceTwice <onlynicetwice@gmail.com>
+Date:   Mon Jan 2 16:51:27 2023 -0300
+
+    hero component responsive fix
+
+[33mcommit ac8f40dacfef42c8e3fdb31c1525c08790b1cdbc[m
+Author: NiceTwice <onlynicetwice@gmail.com>
+Date:   Mon Jan 2 16:23:08 2023 -0300
+
+    benefits main page added
+
+[33mcommit f8295728c4cbe68be57f0b3df1ad467b7c049cfe[m
+Author: NiceTwice <onlynicetwice@gmail.com>
+Date:   Mon Jan 2 15:20:35 2023 -0300
+
+    hero done
+
+[33mcommit f790cd3b0288d1eb6eb0db0739c5f06efb82ab31[m
+Author: NiceTwice <onlynicetwice@gmail.com>
+Date:   Sun Jan 1 22:41:34 2023 -0300
+
+    hero, nav, button & logo added
+
+[33mcommit 3ed3713af62e59a986cadb4d160b2342099ccb20[m
+Author: NiceTwice <onlynicetwice@gmail.com>
+Date:   Sun Jan 1 19:29:35 2023 -0300
+
+    Initial commit from Create Next App

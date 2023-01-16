@@ -1,13 +1,12 @@
 import '../styles/globals.css'
 import Head from 'next/head'
-import Layout from '../layout'
 import AvaibleInvestments from './components/AvaibleInvestments'
 import Benefits from './components/Benefits'
 import FAQ from './components/faq'
 import Hero from './components/Hero'
 import HowItWorks from './components/howItWorks'
 import ReachGoals from './components/ReachGoals'
-import { Team } from './components/Team'
+import Team from './components/Team'
 import WhyUs from './components/WhyUs'
 //yepegow204@cmeinbox.com
 
@@ -20,7 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Layout>
+     
           <Hero/>
           <Benefits/>
           <AvaibleInvestments/>
@@ -29,7 +28,7 @@ export default function Home() {
           <ReachGoals/>
           <Team/>
           <FAQ/>
-        </Layout>
+      
       </main>
     </div>
   )
