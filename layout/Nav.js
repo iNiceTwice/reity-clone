@@ -68,13 +68,13 @@ const Nav = () => {
                     >
                         Cómo funciona
                     </a>
-                    <a
-                        href="#details" 
+                    <Link
+                        href="/marketplace" 
                         onClick={ () => setMenu(menu => !menu)} 
                         className="cursor-pointer"
                     >
                         Propiedades
-                    </a>
+                    </Link>
                     <Link
                         href="/login"
                         onClick={ () => setMenu(menu => !menu)} 
@@ -95,13 +95,13 @@ const Nav = () => {
                     >
                         Cómo funciona
                     </a>
-                    <a
-                        href="#details" 
+                    <Link
+                        href="/marketplace" 
                         onClick={ () => setMenu(menu => !menu)} 
                         className="cursor-pointer"
                     >
                         Propiedades
-                    </a>
+                    </Link>
                     <Link
                         href="/login"
                         onClick={ () => setMenu(menu => !menu)} 

@@ -1,6 +1,7 @@
 import Logo from "../components/Logo";
 import Button from "../components/Button"
 import Link from "next/link";
+import Circles from "../components/Circles";
 
 const signup = () => {
     return ( 
@@ -36,30 +37,10 @@ const signup = () => {
                             <p className="text-white font-thin text-lg mt-4 text-center">Elige las propiedades que quieras e invierte en fracciones desde $100.000. Gana por el arriendo y la plusvalía.</p>
                         </div>
                         <div className="absolute -left-72">
-                            <div className=" w-[45rem] h-[45rem] flex items-center justify-center border-white/5 rounded-full border-[18px]">
-                                <div className="w-[38rem] h-[38rem] flex items-center justify-center border-white/5 rounded-full border-[18px]">
-                                    <div className="w-[31rem] h-[31rem] flex items-center justify-center border-white/5 rounded-full border-[18px]">
-                                        <div className="w-[24rem] h-[24rem] flex items-center justify-center border-white/5 rounded-full border-[18px]">
-                                            <div className="w-[17rem] h-[17rem] flex items-center justify-center border-white/5 rounded-full border-[18px]">
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>    
-                            </div>
+                            <Circles/>
                         </div>
                         <div className="absolute -bottom-72 -right-72">
-                            <div className=" w-[45rem] h-[45rem] flex items-center justify-center border-white/5 rounded-full border-[18px]">
-                                <div className="w-[38rem] h-[38rem] flex items-center justify-center border-white/5 rounded-full border-[18px]">
-                                    <div className="w-[31rem] h-[31rem] flex items-center justify-center border-white/5 rounded-full border-[18px]">
-                                        <div className="w-[24rem] h-[24rem] flex items-center justify-center border-white/5 rounded-full border-[18px]">
-                                            <div className="w-[17rem] h-[17rem] flex items-center justify-center border-white/5 rounded-full border-[18px]">
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>    
-                            </div>
+                            <Circles/>
                         </div>
                     </div>
                 </div>                
