@@ -1,3 +1,4 @@
+"use client"
 import SectionTitle from "../../../components/SectionTitle";
 import DesktopContent from "./DesktopContent";
 import MobileContent from "./MobileContent";

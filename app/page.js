@@ -1,13 +1,14 @@
+import '../styles/globals.css'
 import Head from 'next/head'
 import Layout from '../layout'
-import AvaibleInvestments from '../views/main/AvaibleInvestments'
-import Benefits from '../views/main/Benefits'
-import FAQ from '../views/main/faq'
-import Hero from '../views/main/Hero'
-import HowItWorks from '../views/main/howItWorks'
-import ReachGoals from '../views/main/ReachGoals'
-import { Team } from '../views/main/Team'
-import WhyUs from '../views/main/WhyUs'
+import AvaibleInvestments from './components/AvaibleInvestments'
+import Benefits from './components/Benefits'
+import FAQ from './components/faq'
+import Hero from './components/Hero'
+import HowItWorks from './components/howItWorks'
+import ReachGoals from './components/ReachGoals'
+import { Team } from './components/Team'
+import WhyUs from './components/WhyUs'
 //yepegow204@cmeinbox.com
 
 export default function Home() {

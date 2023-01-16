@@ -1,3 +1,4 @@
+"use client"
 import { useEffect, useState } from "react"
 import Logo from "../components/Logo"
 import Button from "../components/Button"

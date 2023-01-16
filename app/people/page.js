@@ -1,5 +1,5 @@
-import { TeamMember } from "../views/main/Team";
-import Layout from '../layout'
+import { TeamMember } from "../../views/main/Team";
+import Layout from '../../layout'
 
 const People = () => {
 

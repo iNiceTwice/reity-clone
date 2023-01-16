@@ -1,3 +1,5 @@
+"use client"
+
 import { useState } from "react"
 import { CiCirclePlus, CiCircleMinus } from "react-icons/ci"
 import { HiOutlineMinus, HiOutlinePlus } from "react-icons/hi2"

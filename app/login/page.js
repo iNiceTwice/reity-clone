@@ -1,5 +1,5 @@
-import Logo from "../components/Logo";
-import Button from "../components/Button"
+import Logo from "../../components/Logo";
+import Button from "../../components/Button"
 import Link from "next/link";
 
 const signup = () => {
@@ -17,9 +17,9 @@ const signup = () => {
                                 <p className="text-sm text-slate-800/80">Compra tokens de propiedades y gana por el arriendo y plusvalía</p>
                             </div>
                             <form className=" mt-16 w-full flex flex-col">
-                                <label className="mb-1 font-semibold text-slate-800/90 text-sm" for="email">Correo</label>
+                                <label className="mb-1 font-semibold text-slate-800/90 text-sm" htmlFor="email">Correo</label>
                                 <input name="email" type="email" className="py-1 px-2 w-full outline-none rounded-md border"/>
-                                <label className="mb-1 font-semibold text-slate-800/90 text-sm my-4" for="email">Contraseña</label>
+                                <label className="mb-1 font-semibold text-slate-800/90 text-sm my-4" htmlFor="email">Contraseña</label>
                                 <input name="password" type="password" className="py-1 px-2 w-full outline-none rounded-md border"/>
                                 <div className="flex gap-2 items-center my-6">
                                     <input type="checkbox" className="focus:ring-main rounded-md border h-4 w-4 text-primary-600 border-gray-300"/>
