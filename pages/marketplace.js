@@ -36,7 +36,7 @@ const Marketplace = ({ properties }) => {
                 <div className="mt-4 gap-4 grid grid-cols-1 lg:grid-cols-3">
                     {
                         properties?.map((property, index) => (
-                            <PropertyItem data={property}/>
+                            <PropertyItem key={property._id} data={property}/>
                         ))
                     }
                 </div>
