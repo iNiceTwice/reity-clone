@@ -1,10 +1,11 @@
+import { useState } from "react"
 import Layout from "../../layout"
 import axios from "axios"
 import ImagesDisplay from "../../views/property/ImagesDisplay"
 import DataDisplay from "../../views/property/DataDisplay"
 import DescriptionTab from "../../views/property/DescriptionTab"
 import FinancesTab from "../../views/property/FinancesTab"
-import { useState } from "react"
+import DocumentsTab from "../../views/property/DocumentsTab"
 
 const property = ({ data }) => {
 
@@ -45,6 +46,7 @@ const property = ({ data }) => {
                     </div>
                     { tab === "description" && <DescriptionTab data={data}/> }
                     { tab === "finances" && <FinancesTab data={data}/> }
+                    { tab === "documents" && <DocumentsTab data={data}/> }
                 </div>
             </div>
         </Layout>
