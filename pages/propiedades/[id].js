@@ -1,17 +1,17 @@
 import { useState } from "react"
 import Layout from "../../layout"
-import axios from "axios"
 import ImagesDisplay from "../../views/property/ImagesDisplay"
 import DataDisplay from "../../views/property/DataDisplay"
 import DescriptionTab from "../../views/property/DescriptionTab"
 import FinancesTab from "../../views/property/FinancesTab"
 import DocumentsTab from "../../views/property/DocumentsTab"
-
-const host = process.env.NEXT_PUBLIC_HOST
+import connectDB from "../../utils/dbConnection"
+import PROPERTIES from "../../models/properties"
 
 const Property = ({ data }) => {
 
     const [tab, setTab] = useState("description");
+    const parsedData = JSON.parse(data)
 
     const handleClick = (selectedTab) => {
         setTab(selectedTab)
@@ -21,8 +21,8 @@ const Property = ({ data }) => {
         <Layout>
             <div className="py-32 px-4 bg-slate-100/70">
                 <div className="grid items-center lg:grid-cols-2 grid-cols-1 gap-4">
-                    <ImagesDisplay images={ data.img }/>
-                    <DataDisplay data={ data }/>
+                    <ImagesDisplay images={ parsedData.img }/>
+                    <DataDisplay data={ parsedData }/>
                 </div>
                 <div className="bg-white rounded-lg mt-4 p-4">
                     <div className="flex gap-6">
@@ -45,9 +45,9 @@ const Property = ({ data }) => {
                                 Documentos
                         </button>
                     </div>
-                    { tab === "description" && <DescriptionTab data={data}/> }
-                    { tab === "finances" && <FinancesTab data={data}/> }
-                    { tab === "documents" && <DocumentsTab data={data}/> }
+                    { tab === "description" && <DescriptionTab data={parsedData}/> }
+                    { tab === "finances" && <FinancesTab data={parsedData}/> }
+                    { tab === "documents" && <DocumentsTab data={parsedData}/> }
                 </div>
             </div>
         </Layout>
@@ -56,30 +56,26 @@ const Property = ({ data }) => {
 
 
 export const getStaticPaths = async () => {
-    try {
-        const propertyData = await axios.get(`${host}/properties`)
-        const paths = propertyData.data.map(({_id}) => ({ params : { id: `${_id}`}}))
-        return {
-            paths,
-            fallback:false
-        }
-    } catch (error) {
-        console.log(error)
+    await connectDB()
+
+    const properties = await PROPERTIES.find()
+    const paths = properties.map(({_id}) => ({ params : { id: `${_id}`}}))
+    return {
+        paths,
+        fallback:false
     }
+
 }
 
 export const getStaticProps = async ({ params }) => {
-    try {
-        const propertyData = await axios.get(`${host}/property/${params.id}`)
-        return {
-            props:{
-                data: propertyData.data
-            }
-        }
-    } catch (error) {
-        console.log(error)
-    }
 
+    const property = await PROPERTIES.findById(params.id)
+
+    return {
+        props:{
+            data: JSON.stringify(property)
+        }
+    }
 }
 
 export default Property;

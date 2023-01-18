@@ -2,8 +2,13 @@ import Layout from "../layout"
 import axios from "axios"
 import PropertyItem from "../components/PropertyItem"
 import Circles from "../components/Circles"
+import connectDB from "../utils/dbConnection"
+import PROPERTIES from "../models/properties"
 
 const Marketplace = ({ properties }) => {
+
+    const parsedProperties = JSON.parse(properties)
+
     return (
         <Layout>
             <section className="py-32 px-6 bg-slate-100/70">
@@ -35,7 +40,7 @@ const Marketplace = ({ properties }) => {
                 </div>
                 <div className="mt-4 gap-4 grid grid-cols-1 lg:grid-cols-3">
                     {
-                        properties?.map((property, index) => (
+                        parsedProperties?.map((property, index) => (
                             <PropertyItem key={property._id} data={property}/>
                         ))
                     }
@@ -46,12 +51,12 @@ const Marketplace = ({ properties }) => {
 }
 
 export const getStaticProps = async () => {
-    const host = process.env.NEXT_PUBLIC_HOST
-    const data = await axios.get(`${host}/properties`)
-
+    await connectDB()
+    const data = await PROPERTIES.find()
+    
     return {
         props:{
-            properties:data.data
+            properties:JSON.stringify(data)
         }
     }
 }
