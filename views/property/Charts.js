@@ -33,9 +33,7 @@ const Chartsss = ({ tokenPrice, rentalGains, boost }) => {
         ]
     }
     const options = {
-      
         maintainAspectRatio:false
-        
     }
     
     const handleTokenChange = (value) => {
@@ -47,8 +45,6 @@ const Chartsss = ({ tokenPrice, rentalGains, boost }) => {
     const handleCapRateChange = (value) => {
         setCapRate(value)
     }
-
-    console.log(gains)
 
     return ( 
         <div className="w-full p-6 border border-main rounded-lg">
