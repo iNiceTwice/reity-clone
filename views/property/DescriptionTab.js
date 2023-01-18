@@ -1,3 +1,5 @@
+import Charts from "./Charts";
+
 const DescriptionTab = ({ data }) => {
     return ( 
         <>
@@ -25,6 +27,9 @@ const DescriptionTab = ({ data }) => {
                 }
                 <p className="text-xs text-main/80 mt-6">Proyecciones</p>
                 <p className="mt-2 font-thin">Estimaciones del valor de la inversión en el tiempo según supuestos delimitados en flujos estimados de propiedad (Carpeta Documentos)</p>
+                <div className="mt-8">
+                    <Charts rentalGains={data.capRate} boost={data.boost} tokenPrice={ data.tokens.price }/>
+                </div>
             </div>
         </>
      );
