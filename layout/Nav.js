@@ -61,13 +61,13 @@ const Nav = () => {
                         </button>
                     </div>
                     <div className="flex flex-col gap-y-4 pt-12">
-                    <a
-                        href="#how-it-works" 
+                    <Link
+                        href="/#how-it-works" 
                         onClick={ () => setMenu(menu => !menu)} 
                         className="cursor-pointer font-semibold "
                     >
                         Cómo funciona
-                    </a>
+                    </Link>
                     <Link
                         href="/marketplace" 
                         onClick={ () => setMenu(menu => !menu)} 
@@ -88,13 +88,13 @@ const Nav = () => {
                     </div>
                 </motion.div>
                 <div className="md:flex hidden font-sans gap-x-8 items-center text-sm font-semibold text-main">
-                    <a
-                        href="#how-it-works" 
+                    <Link
+                        href="/#how-it-works" 
                         onClick={ () => setMenu(menu => !menu)} 
                         className="cursor-pointer font-semibold "
                     >
                         Cómo funciona
-                    </a>
+                    </Link>
                     <Link
                         href="/marketplace" 
                         onClick={ () => setMenu(menu => !menu)} 

@@ -4,7 +4,7 @@ import { Bar } from "react-chartjs-2"
 
 ChartJS.register(BarElement, CategoryScale, LinearScale, Tooltip, Legend)
 
-const Chartsss = ({ tokenPrice, rentalGains, boost }) => {
+const ChartBars = ({ tokenPrice, rentalGains, boost }) => {
 
     const [tokensBuyed, setTokensBuyed] = useState(1);
     const [gains, setGains] = useState(9);
@@ -79,4 +79,4 @@ const Chartsss = ({ tokenPrice, rentalGains, boost }) => {
      );
 }
  
-export default Chartsss;
+export default ChartBars;

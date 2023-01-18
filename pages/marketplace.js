@@ -46,8 +46,8 @@ const Marketplace = ({ properties }) => {
 }
 
 export const getStaticProps = async () => {
-
-    const data = await axios.get("http://localhost:3000/api/properties")
+    const host = process.env.NEXT_PUBLIC_HOST
+    const data = await axios.get(`${host}/properties`)
 
     return {
         props:{

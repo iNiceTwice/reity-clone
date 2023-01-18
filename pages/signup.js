@@ -2,8 +2,19 @@ import Logo from "../components/Logo";
 import Button from "../components/Button"
 import Link from "next/link";
 import Circles from "../components/Circles";
+import { toast } from "react-toastify"
 
 const signup = () => {
+
+    const notify = () => toast.info("Feature coming soon",{ position:"bottom-right" });
+    
+    const handleClick = () => {
+        notify()
+    }
+    const handleSubmit = (e) => {
+        e.preventDefault()
+    }
+
     return ( 
         <>
             <section className="h-screen">
@@ -17,14 +28,14 @@ const signup = () => {
                                 <h2 className="font-semibold text-3xl mb-2">Crea tu cuenta</h2>
                                 <p className="text-sm text-slate-800/80">Invierte en tokens de propiedades de todo el mundo</p>
                             </div>
-                            <form className=" mt-16 w-full flex flex-col">
+                            <form onSubmit={ (e) => handleSubmit(e) } className=" mt-16 w-full flex flex-col">
                                 <label className="mb-1 font-semibold text-slate-800/90 text-sm" for="email">Correo</label>
                                 <input name="email" type="email" className="py-1 px-2 w-full outline-none rounded-md border"/>
                                 <div className="flex gap-2 items-center my-6">
                                     <input type="checkbox" className="focus:ring-main rounded-md border h-4 w-4 text-primary-600 border-gray-300"/>
                                     <p className="text-sm text-slate-800/80"> He leído y acepto los <a href="#" className="underline">términos y condiciones</a> </p>
                                 </div>
-                                <Button className="py-2">Empezar</Button>
+                                <Button onClick={ handleClick } className="py-2">Empezar</Button>
                                 <div className="border-b w-full my-6"></div>
                                 <Link href="/login" className="text-main font-medium text-sm">¿Ya tienes cuenta? Entra aquí</Link>    
                                 <a href="#" className="text-main font-medium text-sm">Recuperar contraseña</a>    

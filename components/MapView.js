@@ -1,22 +1,20 @@
-import { useLayoutEffect } from "react";
+import { useEffect } from "react";
 import { Map, Marker } from 'mapbox-gl'; 
 
 const MapView = ({ lng, lat, id }) => {
     
-    useLayoutEffect(()=>{
+    useEffect(()=>{
         const map = new Map({
-            container: id, // container ID
-            style: 'mapbox://styles/mapbox/streets-v12', // style URL
-            center: [lng,lat], // starting position [lng, lat]
-            zoom: 18, // starting zoom
+            container: id, 
+            style: 'mapbox://styles/mapbox/streets-v12',
+            center: [lng,lat],
+            zoom: 18, 
         });
         const pin = new Marker().setLngLat([lng,lat]).addTo(map)
-    },[])
+    },[lat,lng,id])
     return ( 
         <>
-            <div id={id} className="h-full w-full">
-
-            </div>
+            <div id={id} className="h-full w-full"></div>
         </>
      );
 }

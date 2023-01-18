@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link";
 import Button from "../../components/Button";
 import SectionTitle from "../../components/SectionTitle";
 
@@ -36,7 +37,9 @@ const AvaibleInvestments = () => {
                                 <Image alt="Rentabilidad" src="https://www.reity.cl/arrowIcon.svg" height={45} width={45}/>
                                 <div>Rentabilidad: 12.73%</div>
                             </div>
-                            <Button className="bg-secondary mt-2">Comprar</Button>
+                            <Link href="/propiedades/63bc814c280d13d1d6d563b0" className="w-full">
+                                <Button className="bg-secondary w-full mt-2">Comprar</Button>
+                            </Link>
                         </div>
                     </div>
                 </div>                                                                                       

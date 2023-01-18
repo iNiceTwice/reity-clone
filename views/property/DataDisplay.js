@@ -1,7 +1,15 @@
 import { HiOutlineHome, HiOutlineUsers, HiOutlineCube } from "react-icons/hi2"
 import Button from "../../components/Button";
+import { toast } from "react-toastify"
 
 const DataDisplay = ({ data }) => {
+    
+    const notify = () => toast.info("Feature coming soon",{ position:"bottom-right" });
+    
+    const handleClick = () => {
+        notify()
+    }
+
     return (
         <div className="h-full bg-white text-main rounded-lg px-6 py-8 flex flex-col">
             <h3 className="text-2xl font-bold">{ data.name }</h3>
@@ -51,7 +59,7 @@ const DataDisplay = ({ data }) => {
                 </div>
             </div>
             <div className="h-full flex flex-col-reverse">
-                <Button className="w-full mt-4 self-end">Comprar</Button>
+                <Button onClick={ handleClick } className="w-full mt-4 self-end">Comprar</Button>
             </div>
         </div>
     )

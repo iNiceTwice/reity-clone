@@ -7,7 +7,9 @@ import DescriptionTab from "../../views/property/DescriptionTab"
 import FinancesTab from "../../views/property/FinancesTab"
 import DocumentsTab from "../../views/property/DocumentsTab"
 
-const property = ({ data }) => {
+const host = process.env.NEXT_PUBLIC_HOST
+
+const Property = ({ data }) => {
 
     const [tab, setTab] = useState("description");
 
@@ -15,7 +17,6 @@ const property = ({ data }) => {
         setTab(selectedTab)
     }
 
-    console.log(data)
     return ( 
         <Layout>
             <div className="py-32 px-4 bg-slate-100/70">
@@ -56,7 +57,7 @@ const property = ({ data }) => {
 
 export const getStaticPaths = async () => {
     try {
-        const propertyData = await axios.get(`http://localhost:3000/api/properties`)
+        const propertyData = await axios.get(`${host}/properties`)
         const paths = propertyData.data.map(({_id}) => ({ params : { id: `${_id}`}}))
         return {
             paths,
@@ -69,7 +70,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async ({ params }) => {
     try {
-        const propertyData = await axios.get(`http://localhost:3000/api/property/${params.id}`)
+        const propertyData = await axios.get(`${host}/property/${params.id}`)
         return {
             props:{
                 data: propertyData.data
@@ -81,4 +82,4 @@ export const getStaticProps = async ({ params }) => {
 
 }
 
-export default property;
+export default Property;
