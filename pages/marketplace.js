@@ -1,5 +1,4 @@
 import Layout from "../layout"
-import axios from "axios"
 import PropertyItem from "../components/PropertyItem"
 import Circles from "../components/Circles"
 import connectDB from "../utils/dbConnection"
@@ -53,7 +52,7 @@ const Marketplace = ({ properties }) => {
 export const getStaticProps = async () => {
     await connectDB()
     const data = await PROPERTIES.find()
-    
+
     return {
         props:{
             properties:JSON.stringify(data)
