@@ -11,7 +11,7 @@ Fully responsive frontend clone of a token-based imboliary, own api with MongoDB
 
 ## Demo
 
-https://greydive-challenge-mp.netlify.app
+https://reity-clone.vercel.app
 
 ## Note
 You'll need to create a MongoDB database and put the mongo_uri in utils/dbConnection.js or create an .env file with the credentials.
