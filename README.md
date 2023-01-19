@@ -1,7 +1,7 @@
 
 # Reity frontend clone
 
-Fully responsive frontend clone of a token-based imboliary, own api with MongoDB and server side rendering for requests.
+Fully responsive frontend clone of a token-based inmobiliary, own api with MongoDB and server side rendering for requests.
 
 
 ## Screenshots
