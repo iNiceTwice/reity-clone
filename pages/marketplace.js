@@ -49,7 +49,7 @@ const Marketplace = ({ properties }) => {
      );
 }
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
     await connectDB()
     const data = await PROPERTIES.find()
 

@@ -54,22 +54,8 @@ const Property = ({ data }) => {
      );         
 }
 
-
-export const getStaticPaths = async () => {
-    await connectDB()
-
-    const properties = await PROPERTIES.find()
-    const paths = properties.map(({_id}) => ({ params : { id: `${_id}`}}))
-    return {
-        paths,
-        fallback:false
-    }
-
-}
-
-export const getStaticProps = async ({ params }) => {
-
-    const property = await PROPERTIES.findById(params.id)
+export const getServerSideProps= async ( context ) => {
+    const property = await PROPERTIES.findById(context.query.id)
 
     return {
         props:{
