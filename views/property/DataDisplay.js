@@ -35,9 +35,11 @@ const DataDisplay = ({ data }) => {
             </div>
             <div className="flex mt-4 gap-[8rem]">
                 <h4 className="font-thin text-xl">Cap Rate:</h4>
-                <div className="flex gap-2 items-baseline">
-                    <p className="text-slate-800/80 text-sm line-through">{ data.capRate }</p>
-                    <h4 className="text-orange-500 text-xl">{ data.capRate + data.boost }%</h4>
+                <div className="flex lg:flex-row flex-col gap-2 items-baseline">
+                    <div className="flex gap-2 items-baseline justify-center">
+                        <p className="text-slate-800/80 text-sm line-through">{ data.capRate }</p>
+                        <h4 className="text-orange-500 text-xl">{ data.capRate + data.boost }%</h4>
+                    </div>
                     {
                         data.boost > 0 ?
                         <p className="w-fit text-xs text-slate-800/80 font-medium bg-main/30 py-1 px-2 rounded-md">Reity Boost 🔥</p>
