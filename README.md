@@ -30,7 +30,7 @@ You'll need to create a MongoDB database and put the mongo_uri in utils/dbConnec
 Clone the project
 
 ```bash
-  git clone https://github.com/iNiceTwice/greydive-challenge.git
+  git clone https://github.com/iNiceTwice/reity-clone.git
 ```
 
 Go to the project directory
